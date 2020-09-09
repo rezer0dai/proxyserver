@@ -1,0 +1,21 @@
+[package]
+name = "test"
+version = "0.1.0"
+authors = ["orange <aaa@bbb.ccc>"]
+
+[lib]
+name = "server"
+path = "src/lib.rs"
+doc = false
+crate_type = ["cdylib"] 
+
+[dependencies]
+winapi = "0.2.8"
+kernel32-sys = "0.2.2"
+lazy_static = "0.2"
+toml = "0.4.2"
+serde = "1.0"
+serde_derive = "1.0.15"
+byteorder = { version = "1.3.4" }
+generic = { path = "../generic" }
+named_pipe = { path = "../named_pipe" }
